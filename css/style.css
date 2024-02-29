@@ -16,10 +16,28 @@ li {
     justify-content: center; 
 }
 
+.flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
 .background {
     width: 100%;
     background-color: #b4d0e7;
 }
+
+footer ul li:first-child {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+}
+
 
 /* HEADER */
 header {
@@ -112,3 +130,28 @@ header {
 }
 
 /* FOOTER */
+
+footer {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+footer, ul {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+.container-footer {
+    width: 60%;
+    /* debug */
+}
+
+.language {
+align-items: start;
+}
