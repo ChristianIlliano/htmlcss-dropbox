@@ -29,7 +29,6 @@ li {
     display: inline;
 }
 
-
 .wrap {
     flex-wrap: wrap;
 }
@@ -81,6 +80,12 @@ li {
     padding: 10px;
     background-color: white;
     border: 1px solid black
+}
+
+.btn-white2 {
+    color: black;
+    padding: 10px 30px;
+    background-color: white;
 }
 
 .margin-tb-btn {
@@ -338,52 +343,68 @@ header ul li img {
 
 /* PARTNERS */
 
-.partner-box {
-position: relative;
-max-width: 100%;
-text-align: center;
-justify-content: center;
-object-fit: contain;
+.members{
+    width: calc(100% / 3);
 }
 
-.partner-box:after {
-content: "";
-display: block;
-padding-top: 100%;
-}
-
-
-.content {
-    position: absolute;
-    background-color: aqua;
-    object-fit: contain;
-}
-
-.designit {
-    display: flex;
-    height: 50%;
+.flex.members > div{
     width: 50%;
-    background-color: a2d39b;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
 }
 
-.arizona {
-    display: flex;
-    height: 50%;
-    width: 50%;
+.team-description{
+    padding: 20px;
+    background-color: rgb(245 245 245);
 }
 
-.uni-florida {
-    display: flex;
-    height: 50%;
-    width: 50%;
+.team-description > p{
+    padding: 40px 0;
 }
 
-.topps {
-    padding: calc();
-    display: flex;
-    height: 50%;
-    width: 50%;
+.designit{
+    
+    padding: 30px;
+    background-color: rgb(162 211 155);
+    border: 10px solid rgba(255, 255, 255, 0.5);
 }
+
+.asu{
+    padding: 40px;
+    background-color: rgb(97 8 43);
+}
+
+.uff{
+    padding: 30px;
+    background-color: rgb(0 147 206);
+}
+
+.topps{
+    padding: 40px;
+    background-color: rgb(255 28 28);
+}
+
+.bicycle{
+    padding: 30px;
+    background-color: rgb(213 0 31);
+}
+
+.hearst{
+    padding: 30px;
+    background-color: rgb(180 208 231);
+}
+
+.lonely{
+    padding: 30px;
+    background-color: rgb(13 36 129);
+}
+
+.channel{
+    padding: 30px;
+    background-color: rgb(255 216 48);
+}
+
 
 .hr-mini {
     width: 40px;
@@ -392,6 +413,12 @@ padding-top: 100%;
 .title-h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem
+}
+
+.title-h2-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #65052b;
 }
 
 main h1 {
@@ -446,7 +473,7 @@ main h1 {
 }
 
 .box1 {
-    height: ;
+    height: 400px ;
     width: calc(100%/3);
     /* debug */
     background-color: blue;
@@ -458,9 +485,12 @@ main h1 {
     background-color: blue;
 }
 
+/* FAQ-SECTION */
+
+
+
 .Question {
     height: 400px;
-    background-color: blueviolet;
 }
 
 /* FOOTER */
