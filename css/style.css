@@ -1,28 +1,122 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
     list-style-type: none;
 }
 
-/* COMMON */
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+img {
+    max-width: 100%;
 }
 
-.flex-footer {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* UTILITIES */
+
+.flex {
     display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.alignitems-center {
     align-items: center;
-    justify-content: space-between; 
+}
+
+.alignitems-start {
+    align-items: start;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.space-ard {
+    justify-content: space-around;
+}
+
+.row-dir {
+    flex-direction: row;
+}
+
+.col-dir {
+    flex-direction: column;
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+.btn-blue {
+    color: white;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: #0260fd;
+}
+
+
+/* LAYOUT */
+
+.col-30 {
+    width: 30%;
+    /* debug */
+    height: 550px;
+    background-color:aliceblue;
+}
+
+.col-70 {
+    width: 70%;
+    
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.img-hero {
+    min-height: 400px;
+}
+
+.margin-t-100 {
+    margin-top: 100px;
+}
+
+.margin-b-50 {
+    margin-bottom: 50px;
 }
 
 .background {
+    padding: 100px 0;
     width: 100%;
     background-color: #b4d0e7;
 }
@@ -38,59 +132,85 @@ ul li {
 
 }
 
+li {
+    margin: 10px 20px;
+}
+
 
 /* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(154, 66, 66);
-    height: 80px;
+    background-color: white;
+    width: 100%;
 }
+
+header ul li img {
+    height: 40px;
+}
+
 /* MAIN */
+
+.hr-mini {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.title-h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem
+}
+
+
+main h1 {
+    font-size: 3.5rem;
+    font-weight: 1000;
+}
+
 .hero {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: end;
     background-color: #b4d0e7;
-    /* debug */
-    height: 700px;
 }
 
-.container-hero {
-    background-color: red;
-    width: 60%;
-    /* debug */
-    height: 550px;
+.title-box {
+    margin: 20px;
+    width: 80%;
 }
 
-.section2 {
-    flex-direction: column;
-    margin-top: 50px;
+.buttom-pack {
+    color: white;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #0260fd;
+    text-align: center;
+}
+
+.button-hero {
+    color: white;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #0260fd;
+}
+
+.container-large {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
     width: 50%;
 }
 
-.layout-row {
-    /* debug */
-    height: 80px;
-    background-color: darkgray;
+
+.box-col {
+    border: 1px solid;
+    border-color: lightgray;
 }
 
-.col {
-    width: calc(100% / 3 - 10px);
-    margin: 5px;
-    /* debug */
-    height: 150px;
-    background-color: aqua;
-}
 
 .layout-big {
-    margin: 100px 0;
     width: 60%;
     /* debug */
     height: 200px;
@@ -98,30 +218,28 @@ header {
 }
 
 .layout-small {
-    margin: 100px 0;
+    flex-direction: column;
     width: 40%;
     /* debug */
     height: 200px;
-    background-color: crimson;
 }
 
 .container-loghi {
-    height: 200px;
     width: 100%;
 }
 
 .box1 {
-    height: 200px;
-    width: 100%;
+    height: 400px;
+    width: calc(100%/3);
     /* debug */
     background-color: blue;
 }
 
 .box2 {
-    height: 200px;
+    height: 400px;
     min-width: calc(100%/3);
-        /* debug */
-        background-color: blue;
+    /* debug */
+    background-color: blue;
 }
 
 .Question {
@@ -141,17 +259,7 @@ footer {
     background-color: black;
 }
 
-footer, ul {
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 30px;
-}
-
 .container-footer {
     width: 60%;
     /* debug */
-}
-
-.language {
-align-items: start;
 }
