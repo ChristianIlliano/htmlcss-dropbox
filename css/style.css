@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
 }
 
 img {
@@ -77,6 +76,13 @@ li {
     background-color: #0260fd;
 }
 
+.btn-white {
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black
+}
+
 .margin-tb-btn {
     margin: 20px 0;
 }
@@ -88,11 +94,6 @@ li {
     width: calc(100%/3)
 }
 
-.col-30-2 {
-    width: 30%;
-    height: 300px;
-    background-color: #0260fd;
-}
 
 .col-70 {
     width: 70%;
@@ -119,6 +120,10 @@ li {
     padding-bottom: 30px;
 }
 
+.p-30 {
+    padding: 30px;
+}
+
 .gap {
     gap: 40px;
 }
@@ -133,6 +138,10 @@ li {
 
 .margin-t-30 {
     margin-top: 30px;
+}
+
+.margin-b-100 {
+    margin-bottom: 100px;
 }
 
 .margin-b-50 {
@@ -205,7 +214,7 @@ header ul li img {
 .box-col-big {
     border: 1px solid;
     border-color: lightgray;
-    padding: 25px 20px;
+    padding: 25px 25px;
     height: 100%;
 }
 
@@ -213,12 +222,19 @@ header ul li img {
 
 .pack-title {
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium';
 }
 
 .price {
     margin: 20px 0%;
     font-weight: 700;
+}
+
+.Simple-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 .time-pack {
@@ -237,6 +253,7 @@ header ul li img {
     list-style-type:none;
     list-style:none;
     display: table;
+    font-weight: 600;
    }
 
 .custom-list2 li {
@@ -248,6 +265,7 @@ header ul li img {
     list-style-type:none;
     list-style:none;
     display: table;
+    font-weight: 600;
    }
 
    .custom-list2 li:nth-child(1):before {
@@ -318,6 +336,54 @@ header ul li img {
     font-size: 1rem;
    }
 
+/* PARTNERS */
+
+.partner-box {
+position: relative;
+max-width: 100%;
+text-align: center;
+justify-content: center;
+object-fit: contain;
+}
+
+.partner-box:after {
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+
+.content {
+    position: absolute;
+    background-color: aqua;
+    object-fit: contain;
+}
+
+.designit {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    background-color: a2d39b;
+}
+
+.arizona {
+    display: flex;
+    height: 50%;
+    width: 50%;
+}
+
+.uni-florida {
+    display: flex;
+    height: 50%;
+    width: 50%;
+}
+
+.topps {
+    padding: calc();
+    display: flex;
+    height: 50%;
+    width: 50%;
+}
 
 .hr-mini {
     width: 40px;
@@ -325,9 +391,8 @@ header ul li img {
 
 .title-h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem
+    font-size: 3rem
 }
-
 
 main h1 {
     font-size: 4rem;
@@ -368,15 +433,12 @@ main h1 {
 .layout-big {
     width: 60%;
     /* debug */
-    height: 200px;
-    background-color: yellow;
 }
 
 .layout-small {
     flex-direction: column;
     width: 40%;
-    /* debug */
-    height: 200px;
+    padding: 60px 40px 40px 40px;
 }
 
 .container-loghi {
@@ -384,14 +446,13 @@ main h1 {
 }
 
 .box1 {
-    height: 400px;
+    height: ;
     width: calc(100%/3);
     /* debug */
     background-color: blue;
 }
 
 .box2 {
-    height: 400px;
     min-width: calc(100%/3);
     /* debug */
     background-color: blue;
